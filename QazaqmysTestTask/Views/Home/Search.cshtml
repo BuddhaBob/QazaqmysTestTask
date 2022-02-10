@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model string
+
+            @using(Html.BeginForm("Search", "Home", FormMethod.Post)) 
+            {
+                <div class="row">
+                    <div class="col">
+                        <label for="searchInputID">Title</label>
+                        <input id="searchInputID" type="text" class="form-control" >
+                    </div>
+                    <div class="col-2">
+                        <label for="searchButtonID">&nbsp</label>
+                        <button id="searchButtonID" type="submit" formaction="/Home/Search" class="form-control btn btn-primary">Search</button>
+                    </div>
+                </div>
+            }
